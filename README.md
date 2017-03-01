@@ -43,6 +43,7 @@ Development dependencies please check in [`package.json`](package.json).
 
 - [`Component`](scripts/component/): A syntactical sugar for the JavaScript class.
 - [Database Entity-Relationship Model](db/): Clarification on language-revision compatible database model in relational database.
+- [RESTful API Server v1](app/api/v1/): Documentation on open API (unstable).
 
 [travis_img]: https://travis-ci.org/many-to-many/ica.svg?branch=master
 [travis_url]: https://travis-ci.org/many-to-many/ica
