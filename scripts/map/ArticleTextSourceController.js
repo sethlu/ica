@@ -145,6 +145,9 @@ ArticleTextSourceController.defineMethod("updateView", function updateView(lengt
       setElementProperty(span, "textsource-length", textSourceEnd - previousAbsoluteIndex);
       span.textContent = sourceParagraph.substring(previousRelativeIndex, textSourceLength);
       sourceParagraphElement.appendChild(span);
+    } else {
+      span.appendChild(document.createElement("br"));
+      sourceParagraphElement.appendChild(span);
     }
 
     // Add paragraph
