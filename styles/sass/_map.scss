@@ -4,6 +4,11 @@
 
   .article {
 
+    > :first-child:not(.topbar) {
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+
     > .sources-container {
       position: relative;
       margin: 0 -1.5em;
