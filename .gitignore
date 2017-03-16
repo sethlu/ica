@@ -4,7 +4,10 @@ npm-debug.log
 
 .sass-cache
 
-*.bak
+*.mwb
+*.mwb.bak
+
+*.ai
 
 styles/main.css
 
