@@ -177,9 +177,9 @@ With `new Model()`, a `Model` instance follows the process listed below: (Inheri
 
   It calls the `modelDidUpdate()` on `Controller` instances, so the views may be updated accordingly without explicitly calling `updateView()` on every `Controller` instances using this model.
 
-- `destroy(destroyViews = false)` *(extending)*
+- `destroy(destroyControllers = false, destroyViews = false)` *(extending)*
 
-  It either (1) propagates to destroy its dependent `Controller` instances and their views, when `destroyViews = true`, or (2) requests the `Controller` instances to release their references from and to the `Model` instance, by default.
+  It either (1) propagates to destroy its dependent `Controller` instances and, if `destroyViews = true`, their views, when `destroyControllers = true`, or (2) requests the `Controller` instances to release their references from and to the `Model` instance, by default.
 
   - `uninit()` *(inherited, avoid calling)*
 
